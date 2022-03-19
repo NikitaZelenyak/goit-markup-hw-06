@@ -13,15 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="container page-header__wrap">
         <nav class="page-header__nav">
-          <a class="logo" href="./index.html"
-            ><span class="logo-accent">Web</span>Studio</a
+          <a class="logo logo--white" href="./index.html"
+            ><span class="logo__text-accent">Web</span>Studio</a
           >
 
           <ul class="page-header__list">
@@ -29,7 +29,9 @@
               <a class="page-header__link" href="./index.html">Студия</a>
             </li>
             <li class="page-header__item">
-              <a class="page-header__link current" href="./portofolio.html"
+              <a
+                class="page-header__link page-header__link--current"
+                href="./portofolio.html"
                 >Портфолио</a
               >
             </li>
@@ -333,14 +335,14 @@
     <footer class="footer section">
       <div class="container footer__wrap">
         <div>
-          <a class="logo logo-color" href="/index.html"
-            ><span class="logo-accent">Web</span>Studio</a
+          <a class="logo logo--color" href="/index.html"
+            ><span class="logo__text-accent">Web</span>Studio</a
           >
           <address>
             <ul class="footer__list">
               <li class="footer__item">
                 <a
-                  class="footer__link footer__link-colorHover"
+                  class="footer__link footer__link--colorHover"
                   href="https://goo.gl/maps/Yac1yd6HgQ2EfbCq5"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -393,15 +395,15 @@
             </li>
           </ul>
         </div>
-        <div class="subscription__wrap">
+        <div class="subscription">
           <b class="subscription__title">Подпишитесь на рассылку</b>
           <form class="subscription-form">
             <input
-              class="subscription-form__input"
+              class="subscription__input"
               type="email"
               placeholder="Email"
             />
-            <button class="subscription-form__button button" type="submit">
+            <button class="subscription__button button" type="submit">
               <div class="button__box">
                 <span class="button__text">Подписаться</span>
                 <svg class="button__icon" width="24px" height="24px">

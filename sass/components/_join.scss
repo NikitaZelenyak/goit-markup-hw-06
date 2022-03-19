@@ -1,0 +1,43 @@
+.join-box {
+  margin-left: 70px;
+
+  &__title {
+    color: $accent-color-logo-footer;
+    font-family: $general-font;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__list {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.join-box__link {
+  @include transition(background-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    @include transition(background-color);
+    background-color: $accent-color;
+  }
+}
+.join-box__icon {
+  fill: $svg-accent-color-white;
+}
